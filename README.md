@@ -1,4 +1,4 @@
-# brightfield_image_segmentation
+# Brightfield_Image_Segmentation_Quantification
  Repository for scripts to use U-Net to quantify Celigo brighfield images of Maxi Rings (24-well plates).
 
 # Instructions for use in a Docker Container
