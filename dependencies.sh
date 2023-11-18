@@ -1,0 +1,16 @@
+pip3 install numpy==1.26.2
+pip3 install opencv-python==4.5.5.64
+pip3 install pandas==1.4.2
+pip3 install pathlib==1.0.1
+pip3 install tk==0.1.0
+pip3 install torch==2.1.1
+pip3 install torchvision==0.16.1
+pip3 install seaborn==0.11.2
+pip3 install matplotlib==3.5.2
+pip3 install sklearn==0.0
+pip3 install scikit-image==0.19.2
+pip3 install tqdm==4.64.0
+pip3 install segmentation-models-pytorch==0.2.1
+pip3 install ipython==8.3.0
+pip3 install regex==2022.4.24
+pip3 install gimpformats==2022.0.1

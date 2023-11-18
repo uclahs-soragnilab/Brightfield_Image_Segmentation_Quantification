@@ -1,0 +1,6 @@
+# Ignore image files
+*.png
+*.tiff
+
+# Ignore quantification files
+*.csv
