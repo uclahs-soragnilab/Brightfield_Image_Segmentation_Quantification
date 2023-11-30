@@ -16,7 +16,7 @@ docker pull soragnilab/brightfield_image_segmentation
 ```
 6. Once the Docker image has been pulled, run the image while mounting the repository into the app directory of the Docker container
 ```
-docker run -it -v {hostpath}BF_Image_Segmentation_Quantification:/app bf_image_quant
+docker run -it -v {hostpath}Brightfield_Image_Segmentation_Quantification:/app bf_image_quant
 ```
 7. The terminal will show that it is working in the /app directory within the Docker container. Proceed to running the run_segmentation_pipeline.py script to segment the images in the "Image-Folder" on the host machine
 ```
