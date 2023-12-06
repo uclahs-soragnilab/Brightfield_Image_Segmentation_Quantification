@@ -6,17 +6,17 @@
 2. Pull code from GitHub to your host machine.
 3. In the repository, add the images you want to segment to the "Image-Folder" directory. Be sure to keep any file naming conventions consistent with the output from the Nexcelom Celigo Instrument for proper quantification. The segmentation process does not require any specific naming.
 4. In a terminal, navigate to the repository containing the Image-Folder folder and the run_segmentation_pipeline.py script.
-5. The Docker image can be built from the Dockerfile in the directory
+5. Start the Docker Engine by running Docker Desktop or using one of these mechanisms: https://docs.docker.com/config/daemon/start/. The Docker image can be built from the Dockerfile in the directory
 ```
 docker build -t bf_image_quant .
 ```
 or be pulled from Docker hub:
 ```
-docker pull soragnilab/brightfield_image_segmentation
+docker pull soragnilab/brightfield_image_segmentation:v1
 ```
-6. Once the Docker image has been pulled, run the image while mounting the repository into the app directory of the Docker container
+6. Once the Docker image has been pulled, run the image while mounting the local repository into the app directory of the Docker container
 ```
-docker run -it -v {hostpath}Brightfield_Image_Segmentation_Quantification:/app bf_image_quant
+docker run -it -v {absolute hostpath}/Brightfield_Image_Segmentation_Quantification:/app soragnilab/brightfield_image_segmentation:v1
 ```
 7. The terminal will show that it is working in the /app directory within the Docker container. Proceed to running the run_segmentation_pipeline.py script to segment the images in the "Image-Folder" on the host machine
 ```
